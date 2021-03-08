@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "ccd9bcdb-3ef9-44db-b660-1ce9d6c89c0f",
+		"name": "Kale pos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sales Reciepts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user_id",
+						"value": "KS1@gmail.com",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "iaQvgNkXDhX8el9Qk7BRQTDLjjjhAg7QCJyqA77ReDfUfYUblJzTdBiZKnJGfqFW49T4RQKTBde",
+						"type": "text"
+					},
+					{
+						"key": "company_id",
+						"value": "MbdmnULaWXWCE6XuGHM7",
+						"type": "text"
+					},
+					{
+						"key": "client_id",
+						"value": "sEDtau6L9YGsoWSmoAezwGIVVLxukfE5JfvIFu9D",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://csdev.kaleapps.com:3000/api/sales/salesreceipts?start_date=2021-03-06&&&&&end_date=2021-03-08",
+					"protocol": "http",
+					"host": [
+						"csdev",
+						"kaleapps",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sales",
+						"salesreceipts"
+					],
+					"query": [
+						{
+							"key": "start_date",
+							"value": "2021-03-06"
+						},
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": "end_date",
+							"value": "2021-03-08"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Weekly Sales Orders",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user_id",
+						"value": "KS1@gmail.com",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "iaQvgNkXDhX8el9Qk7BRQTDLjjjhAg7QCJyqA77ReDfUfYUblJzTdBiZKnJGfqFW49T4RQKTBde",
+						"type": "text"
+					},
+					{
+						"key": "company_id",
+						"value": "MbdmnULaWXWCE6XuGHM7",
+						"type": "text"
+					},
+					{
+						"key": "client_id",
+						"value": "sEDtau6L9YGsoWSmoAezwGIVVLxukfE5JfvIFu9D",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://csdev.kaleapps.com:3000/api/sales/salesorder?start_date=2021-03-06&&&&&end_date=2021-03-08",
+					"protocol": "http",
+					"host": [
+						"csdev",
+						"kaleapps",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sales",
+						"salesorder"
+					],
+					"query": [
+						{
+							"key": "start_date",
+							"value": "2021-03-06"
+						},
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": null,
+							"value": null
+						},
+						{
+							"key": "end_date",
+							"value": "2021-03-08"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "salesreceipt by order id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "user_id",
+						"value": "KS1@gmail.com",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "iaQvgNkXDhX8el9Qk7BRQTDLjjjhAg7QCJyqA77ReDfUfYUblJzTdBiZKnJGfqFW49T4RQKTBde",
+						"type": "text"
+					},
+					{
+						"key": "company_id",
+						"value": "MbdmnULaWXWCE6XuGHM7",
+						"type": "text"
+					},
+					{
+						"key": "client_id",
+						"value": "sEDtau6L9YGsoWSmoAezwGIVVLxukfE5JfvIFu9D",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://csdev.kaleapps.com:3000/api/sales/salesreceipt/1002",
+					"protocol": "http",
+					"host": [
+						"csdev",
+						"kaleapps",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sales",
+						"salesreceipt",
+						"1002"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
